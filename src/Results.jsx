@@ -3,7 +3,7 @@ import Pet from "./Pet";
 const Results = ({ pets }) => {
     return (
         <div className="search">
-            {!pets.length ? (
+            {!pets.length ? (               //ternary operator    condition ? ifTrue : ifFalse
                 <h1>No Pets Found</h1>
             ) : (
                 pets.map(pet => (
